@@ -134,10 +134,8 @@ function handleBuyNow(id) {
       value="1"
       readonly
     />
-    <span
-      ><i onclick="deleteHandler("${name}")"
-        class="fa-sharp fa-solid fa-trash text-red-700 cursor-pointer text-xl"
-      ></i
+    <span id="delete" onclick="deleteHandler('${name}')"
+      ><i class="fa-sharp fa-solid fa-trash text-red-700 cursor-pointer text-xl"></i
     ></span>
 
 </div>
@@ -161,5 +159,8 @@ function handleClear() {
   document.getElementById("badge-count").innerText = 0;
 }
 const deleteHandler = productName => {
-
+  console.log(productName)
+  // const deleteinput = document.getElementById('delete');
+  // // console.log(deleteinput)
+  // deleteinput.textContent = '';
 }
